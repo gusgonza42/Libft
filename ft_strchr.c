@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 17:17:39 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/29 18:37:18 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:21:28 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ char	*ft_strchr(const char *str, int c)
 			return ((char *)&str[pos]);
 		pos++;
 	}
-	if ((char)c == '\0')
-		return ((char *)&str[pos]);
 	return (NULL);
 }
 /*#include <stdio.h>
