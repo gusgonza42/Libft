@@ -6,13 +6,13 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 17:36:09 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/01 13:09:35 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/04 16:30:57 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(int nmemb, int size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 

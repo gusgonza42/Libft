@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 13:56:29 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/22 14:24:24 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/03 18:35:36 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,47 +14,37 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	pos;
-
-	pos = 0;
-	while (s1[pos] != '\0' && s2[pos] != '\0' && n > 0)
+	while (n > 0 && *s1 != '\0' && *s2 != '\0')
 	{
-		if (s1[pos] != s2[pos])
-			return (s1[pos] - s2[pos]);
+		if (*s1 != *s2)
+			return ((unsigned char)*s1 - (unsigned char)*s2);
+		s1++;
+		s2++;
 		n--;
-		pos++;
 	}
+	if (n > 0)
+		return ((unsigned char)*s1 - (unsigned char)*s2);
 	return (0);
 }
-/*#include <stdio.h>
-#include <string.h>
+/*
+#include <stdio.h>
 
-int	main(void)
-{
-	char	*s1 = "hola1";
-	char	*s2 = "hola2";
-	int	n = 4;
-	int r = ft_strncmp(s1, s2, n);
-	if (ft_strncmp(s1, s2, n) > 0)
-		printf("%dthe first character that does not match has a greateri\n 
-		value in ptr1 than in ptr2\n", r);
-	else if (ft_strncmp(s1, s2, n) == 0)
-		printf("he contents of both strings are equal\n");
-	else if (ft_strncmp(s1, s2, n) < 0)
-		printf("%d the first character that does not match has a lower \n
-		value in str1 than in str2\n", r);
-	else
-		printf("Yow chat, rarete ^.-");
-	
+int main() {
+    const char *s1 = "hola";
+    const char *s2 = "holaa";
+    size_t n = 4;
 
-	if (strncmp(s1, s2, n) > 0)
-		printf("%d the first character that does not match has a greater\n
-		value in ptr1 than in ptr2\n", r);
-	else if (strncmp(s1, s2, n) == 0)
-		printf("he contents of both strings are equal\n");
-	else if (strncmp(s1, s2, n) < 0)
-		printf("%d the first character that does not match has a lower value\n
-		in str1 than in str2\n", r);
-	else
-		printf("Yow chat, rarete ^.-");
-}*/
+    int result = ft_strncmp(s1, s2, n);
+
+    if (result == 0) {
+        printf("Las cadenas son iguales.\n");
+    } else if (result < 0) {
+        printf("La cadena s1 es menor que la cadena s2.\n");
+    } else {
+        printf("La cadena s1 es mayor que la cadena s2.\n");
+    }
+
+    return 0;
+}
+ 
+ */

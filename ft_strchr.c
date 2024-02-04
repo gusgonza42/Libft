@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 17:17:39 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/31 16:21:28 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/03 18:00:48 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,18 @@ char	*ft_strchr(const char *str, int c)
 	size_t	pos;
 
 	pos = 0;
-	while (str[pos] != '\0')
+	while (str[pos] != (char) c)
 	{
-		if (str[pos] == (char) c)
-			return ((char *)&str[pos]);
+		if (str[pos] == '\0')
+			return (0);
 		pos++;
 	}
-	return (NULL);
+	return ((char *)&str[pos]);
 }
 /*#include <stdio.h>
 int main(void) {
     const char *cadena = "Hola, mundo!";
-    char caracter_a_buscar = '\0';
+    char caracter_a_buscar = 'u';
 
     char *resultado = ft_strchr(cadena, caracter_a_buscar);
 

@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:35:36 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/01 13:11:21 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/04 16:11:43 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len);
 void	*ft_memchr(const void *str, int c, int n);
 void	*ft_memset(void *dest, int c, size_t n);
 
-void	*ft_calloc(int nmemb, int size);
+void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *str);
 
 /* Part 2 - Funciones adicionales */

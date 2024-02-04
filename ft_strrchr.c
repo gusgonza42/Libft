@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 20:13:48 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/01 12:29:27 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/03 19:01:42 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	size_t	len;
+	int	len;
 
 	len = ft_strlen(str);
-	while (len > 0)
+	while (len >= 0)
 	{
 		if (str[len] == (char) c)
 			return ((char *)&str[len]);
@@ -29,7 +29,7 @@ char	*ft_strrchr(const char *str, int c)
 
 int main (void)
 {
-		printf("Result ft : %s", ft_strrchr("poto0000ta", 'o'));
+		printf("Result ft : %s\n", ft_strrchr("poto0000ta", 'o'));
 
 	return (0);
 

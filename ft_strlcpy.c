@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 15:30:29 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/01 13:32:25 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/01 13:29:26 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <string.h>
 int	main(void)
 {
