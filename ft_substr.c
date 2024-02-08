@@ -1,26 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/31 17:36:09 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/05 13:43:38 by gusgonza         ###   ########.fr       */
+/*   Created: 2024/02/04 17:34:42 by gusgonza          #+#    #+#             */
+/*   Updated: 2024/02/08 20:55:22 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	void	*ptr;
-	size_t	total_len;
+	char		*ptr;
+	size_t		pos;
+	size_t		len_s;
 
-	total_len = nmemb * size;
-	ptr = malloc(total_len);
+	pos = 0;
+	if (!s)
+		return (NULL);
+	len_s = ft_strlen(s);
+	ptr = (char *)malloc(sizeof((len + 1) * sizeof(char)));
 	if (!ptr)
 		return (NULL);
-	ft_bzero(ptr, total_len);
+	if (start >= len_s)
+	{
+		ptr[0] = '\0';
+		len = 0;
+	}
+	else if (len > len_s - start)
+		len = len_s - start;
+	while (pos < len && s[start + pos] != '\0')
+	{
+		ptr[pos] = s[start + pos];
+		pos++;
+	}
+	ptr[pos] = '\0';
 	return (ptr);
 }
