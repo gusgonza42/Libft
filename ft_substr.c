@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 17:34:42 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/08 20:55:22 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/09 16:41:20 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,21 +22,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	len_s = ft_strlen(s);
-	ptr = (char *)malloc(sizeof((len + 1) * sizeof(char)));
-	if (!ptr)
-		return (NULL);
-	if (start >= len_s)
+	if (start <= len_s)
 	{
-		ptr[0] = '\0';
-		len = 0;
+		if (len > len_s - start)
+			len = len_s - start;
+		ptr = (char *)ft_calloc((len + 1), sizeof(char));
+		if (!ptr)
+			return (NULL);
+		while (pos < len && s[start + pos] != '\0')
+		{
+			ptr[pos] = s[start + pos];
+			pos++;
+		}
 	}
-	else if (len > len_s - start)
-		len = len_s - start;
-	while (pos < len && s[start + pos] != '\0')
-	{
-		ptr[pos] = s[start + pos];
-		pos++;
-	}
-	ptr[pos] = '\0';
+	else
+		return (ft_calloc(1, sizeof(char)));
 	return (ptr);
 }
