@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:35:36 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/09 19:22:22 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/10 20:43:00 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@
 # include <stddef.h>
 # include <stdio.h>
 # include <string.h>
-
-# define MAX_INT 2147483647
-# define MIN_INT -214783648
 
 /* Parte 1 - Funciones de libc */
 
