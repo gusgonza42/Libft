@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 19:44:33 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/03 19:17:16 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/11 16:55:16 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	size_t	pos_find;
 
 	pos_str = 0;
-	if (*to_find == '\0' || str == NULL)
+	if (*to_find == '\0')
 		return ((char *)str);
 	while (str[pos_str] != '\0' && pos_str < len)
 	{
