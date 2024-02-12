@@ -6,9 +6,11 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 16:12:45 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/14 16:17:10 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:05:53 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -16,13 +18,10 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-/*#include <stdio.h>
-
+/* //For testing
 int	main(void)
 {
-	int c;
-
-	c = 'A';
-	printf("%c -> %c", c, ft_tolower(c));
+	printf("Original: %c -> %c\n", 'G', ft_tolower('G'));
+	printf("Ft_: %c -> %c\n", 'G', tolower('G'));
 	return (0);
 }*/

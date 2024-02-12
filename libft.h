@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:35:36 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/11 14:14:12 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 12:29:01 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <ctype.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <string.h>

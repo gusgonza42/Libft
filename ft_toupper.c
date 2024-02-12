@@ -6,9 +6,11 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 15:07:34 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/14 16:12:21 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:00:24 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
@@ -16,11 +18,10 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-/*#include <stdio.h>
+/*// For testing
 int	main(void)
 {
-	int c;
-
-	c = ' ';
-	printf("%c -> %c", c, ft_toupper(c));
+	printf("Original: %c -> %c\n", 'a', ft_toupper('a'));
+	printf("ft_: %c -> %c\n", 'a', toupper('a'));
+	return (0);
 }*/

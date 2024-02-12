@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 20:13:48 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/03 19:01:42 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 14:43:31 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-/*#include <stdio.h>
-
+/* //For testing
 int main (void)
 {
-		printf("Result ft : %s\n", ft_strrchr("poto0000ta", 'o'));
-
+	char	c = 'u';
+	printf("Original -> '%s'\n", strrchr("Haikyu0000series", c));
+	printf("Ft_      -> '%s'\n", ft_strrchr("Haikyu0000series", c));
 	return (0);
-
-}*/
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 17:17:39 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/03 18:00:48 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 14:37:13 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,18 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return ((char *)&str[pos]);
 }
-/*#include <stdio.h>
+/* //For testing
 int main(void) {
-    const char *cadena = "Hola, mundo!";
-    char caracter_a_buscar = 'u';
+    const char *str = "Hola, mundo!";
+    char search_c = 'a';
 
-    char *resultado = ft_strchr(cadena, caracter_a_buscar);
+    char *result= ft_strchr(str, search_c);
 
-    if (resultado != NULL) {
-        printf("Carácter encontrado: %c\n", *resultado);
-        printf("Puntero al carácter: %p\n", (void *)resultado);
+    if (result != NULL) {
+        printf("Carácter encontrado: '%c'\n", *result);
+        printf("Puntero al carácter: '%p'\n", result);
     } else {
         printf("Carácter no encontrado.\n");
     }
-
     return 0;
 }*/

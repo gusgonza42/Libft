@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 17:34:42 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/09 16:41:20 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:17:59 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_calloc(1, sizeof(char)));
 	return (ptr);
 }
+/*//For testing
+int	main (void)
+{
+	char	s1[] = "Hello/people/of/Tomorrowland";
+	printf("My ft_   -> %s\n", ft_substr(s1, 0, 4));
+	return (0);
+}*/

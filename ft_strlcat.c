@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 15:05:23 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/03 17:40:28 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 19:49:04 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,9 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[pos] = '\0';
 	return (dest_len + src_len);
 }
-/*#include <stdio.h>
-
-int main() {
-    char dest[20] = "Hello";
+ //For testing
+int main(void) {
+    char dest[] = "Hello";
     const char src[] = " World!";
     
     printf("Antes de ft_strlcat:\n");
@@ -48,4 +47,4 @@ int main() {
     printf("Resultado: %zu\n", result);
 
     return 0;
-}*/
+}

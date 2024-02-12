@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 13:56:29 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/03 18:35:36 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 14:59:35 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,25 +26,21 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return ((unsigned char)*s1 - (unsigned char)*s2);
 	return (0);
 }
-/*
-#include <stdio.h>
-
+/* //For testing
 int main() {
-    const char *s1 = "hola";
+    const char *s1 = "holai";
     const char *s2 = "holaa";
-    size_t n = 4;
+    size_t len = 4;
 
-    int result = ft_strncmp(s1, s2, n);
+    int result = ft_strncmp(s1, s2, len);
 
     if (result == 0) {
-        printf("Las cadenas son iguales.\n");
+        printf("s1 & s2 are equal.\n");
     } else if (result < 0) {
-        printf("La cadena s1 es menor que la cadena s2.\n");
+        printf("s1 is less than s2.\n");
     } else {
-        printf("La cadena s1 es mayor que la cadena s2.\n");
+        printf("s1 is greater than s2.\n");
     }
-
     return 0;
 }
- 
- */
+*/

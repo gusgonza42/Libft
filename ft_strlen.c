@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 13:20:40 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/15 13:50:34 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 15:44:01 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,13 @@ size_t	ft_strlen(const char *s)
 	}
 	return (len);
 }
-/*#include <stdio.h>
-#include <string.h>
+/* //For testing
 int	main(void)
 {
-	char *c = "Yow | chat test\n";
+	char *c = "Yow |m chat test";
 	printf("%s \n", c);
 	printf("ft -> %zu \n", ft_strlen(c));
-
 	printf("Original -> %zu \n", strlen(c));
-
 	return (0);
-}*/
+}
+*/

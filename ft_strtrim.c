@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/11 11:41:40 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/11 13:41:13 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:42:30 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	pos;
 	size_t	start;
 	size_t	end;
 	char	*trim_str;
@@ -30,19 +29,21 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trim_str = (char *)malloc(sizeof(char) * (end - start + 1));
 	if (!trim_str)
 		return (NULL);
-	pos = 0;
 	ft_strlcpy(trim_str, &s1[start], end - start + 1);
 	return (trim_str);
 }
-/*
+/* // For testing
 int main (void)
 {
-	char *s1 = "";
-	char *expectedReturn = "";
-	char *ret = ft_strtrim(s1, " \n\t");
+	char const	*s1 = "xxHello Dudexx";
+	char const	*set= "x ";
+	char		*trimmed_str;
 
-	if (!strcmp(ret, expectedReturn))
-		write(1, "GOD\n", 4);
-	else
-		write(1, "kekw\n", 5);
+	trimmed_str = ft_strtrim(s1, set);
+	if (trimmed_str == NULL)
+		printf("Error allocating memory\n");
+	printf("original str: '%s'\n", s1);
+	printf("Ft_         : '%s'\n", trimmed_str);
+	free(trimmed_str);
+	return (0);
 }*/
