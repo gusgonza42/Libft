@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:35:36 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/12 12:29:01 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/14 18:48:47 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <ctype.h>
 # include <stddef.h>
-# include <stdio.h>
-# include <string.h>
 
 /* Parte 1 - Funciones de libc */
 
@@ -34,7 +31,7 @@ int		ft_atoi(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
-size_t	ft_strlcat(char *dest, const char *src, size_t size);
+size_t	ft_strlcat(char *dest, const char *src, size_t dstsize);
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len);
 char	*ft_strchr(const char *str, int c);

@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 16:12:45 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/12 13:05:53 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/14 19:09:02 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_tolower(int c)
 	return (c);
 }
 /* //For testing
+#include <stdio.h>
+#include <ctype.h>
 int	main(void)
 {
 	printf("Original: %c -> %c\n", 'G', ft_tolower('G'));

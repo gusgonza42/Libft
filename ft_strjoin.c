@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 16:59:35 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/09 17:38:54 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/14 19:23:24 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
+/* // For testing
+#include <stdio.h>
+int	main(void)
+{
+	char	s1[] = "hello";
+	char	s2[] = " dude";
+	char	*result = ft_strjoin(s1, s2);
+	printf("cloud %s\n", result);
+	free(result);
+	return (0);
+}
+*/

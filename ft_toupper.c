@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 15:07:34 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/12 13:00:24 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/14 19:06:23 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_toupper(int c)
 	return (c);
 }
 /*// For testing
+#include <stdio.h>
+#include <ctype.h>
 int	main(void)
 {
 	printf("Original: %c -> %c\n", 'a', ft_toupper('a'));
