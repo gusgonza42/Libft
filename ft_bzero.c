@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:38:36 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/01 12:45:58 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/15 20:32:42 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *str, int n)
 {
 	unsigned char	*ptr;
-	int				pos;
+	size_t			pos;
 
 	pos = 0;
 	ptr = (unsigned char *) str;
@@ -25,12 +25,21 @@ void	ft_bzero(void *str, int n)
 		pos++;
 	}
 }
-/*#include <stdio.h>
+/* // For testing
+#include <stdio.h>
 
 int main(void)
 {
-	char *str = "yowchat";
-	ft_bzero(str,6);
-	 printf("Result: %s\n", str);
+	char str[] = "yowchat i";
+	size_t	cont = 0;
+	size_t	size = ft_strlen(str);
+	ft_bzero(str,7);
+	while (cont < size)
+	{
+		printf("'%d'", str[cont]);
+		cont++;
+	}
+		printf("\n");
 	return (0);
-}*/
+}
+*/

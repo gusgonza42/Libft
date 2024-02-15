@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 20:27:22 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/22 14:21:52 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/15 20:09:58 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,12 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)result * sign);
 }
-/*
+/* //For testing
 #include <stdio.h>
 int	main(void){
-	char *c = "-12 312";
+	char *c = "-1231320 312";
 	printf("%d\n", atoi(c));
 	printf("%d\n", ft_atoi(c));
 	return (0);
-}*/
+}
+*/

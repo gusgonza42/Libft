@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/10 11:32:12 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/11 15:14:52 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/15 19:52:11 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,22 @@ void	ft_putnbr_fd(int n, int fd)
 	c = n % 10 + '0';
 	write(fd, &c, 1);
 }
+/* // For testing
+#include "libft.h"
+
+int	main(void)
+{
+	int num1 = 12345;
+	int num2 = 0;
+	int num3 = -6789;
+	int fd = 1;
+
+	ft_putnbr_fd(num1, fd);
+	ft_putchar_fd('\n', fd);
+	ft_putnbr_fd(num2, fd);
+	ft_putchar_fd('\n', fd);
+	ft_putnbr_fd(num3, fd);
+	ft_putchar_fd('\n', fd);
+	return (0);
+}
+*/

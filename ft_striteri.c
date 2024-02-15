@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 18:26:23 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/14 19:41:31 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/15 19:24:09 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	print_index_char(unsigned int index, char *c)
 int	main(void)
 {
 	char	str[] = "Hello";
-	ft_striteri(str, &print_index_char);
+	ft_striteri(str, print_index_char);
 	return (0);
 }
 */

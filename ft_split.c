@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/10 11:58:26 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/11 15:08:11 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/15 19:39:48 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,18 +99,21 @@ char	**ft_split(char const *s, char delimit)
 	arr[pos] = NULL;
 	return (arr);
 }
-/*
+/* // For testing
+#include <stdio.h>
+
 int	main(void)
 {
-	// 2 palabras 9 delimitadores
+	
 	char	*str2 = "    a b     c d    ";
 	char	delimit = ' ';
 	char **split = ft_split(str2, delimit);
 	if (!split)
 		return (1);
-	printf("AAA: %lu\n", count_word(str2, delimit));
+	printf("result: %lu\n", count_word(str2, delimit));
 	for (int i = 0; split[i]; i++)
 		printf("%s\n", split[i]);
 	ft_free(split);
 	return (0);
-}*/
+}
+*/
