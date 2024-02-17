@@ -1,12 +1,25 @@
-# --- Nombre de la libreria --- #
+# <-- Library's Name --> #
 NAME = libft.a
-# --- Comando de compilado --- #
-CC = cc
-# --- Flags de compilado --- #
+
+# <-- Compilation Command --> #
+CC = gcc
+
+# <-- Compilation Flags --> #
 CFLAGS = -Wall -Werror -Wextra
+
+# <-- Remove Command -->#
+RM = rm -f
+
+# <-- HEADER --> #
 HEADER = libft.h
+
+# <-- MAKEFILE --> #
+MAKEFILE = Makefile
+
+# <-- AR --> #
 AR = ar -rcs
-# <-- Archivos --> #
+
+# <-- Files --> #
 SRC_FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 			ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
@@ -14,24 +27,37 @@ SRC_FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c \
 			ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
 			ft_putendl_fd.c ft_putnbr_fd.c ft_strtrim.c ft_split.c ft_itoa.c
+
+# <-- Objects --> #
 OBJS = $(SRC_FILES:.c=.o)
 
+# <-- Main Target --> #
 all: $(NAME)
 
+# <--Library Creation--> #
 $(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)
-	@echo "$@ generado!🚀"
+	@echo "✅ 🚀 0bjects created successfully!"
+	@$(AR) $@ $(OBJS)
+	@echo "✅ 🛰  $(NAME) created successfully!"
 
-%.o: %.c $(HEADER) Makefile
-	$(CC) $(CFLAGS) -c $< -o $@
-	@echo "🔨Compilando..."
+# <-- Objects Creation --> #
+%.o: %.c $(HEADER) $(MAKEFILE)
+	@echo "🧩 ☁️  Compiling... $<..."
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@echo "🔨 🦔 $@ created!"
 
+# <-- Objects Destruction --> #
 clean:
-	@echo "🗑 Eliminado!"
-	rm -f *.o 
-fclean: clean
-	rm -f $(NAME)
+	@$(RM) $(OBJS)
+	@echo "🗑️  🚀 Objects destroyed successfully!"
 
+# <-- Clean Execution + libft.a Destruction --> #
+fclean: clean
+	@$(RM) $(NAME)
+	@echo "🗑️  🛰  $(NAME) destroyed successfully!"
+
+# <-- Fclean Execution -->
 re: fclean all
 
-.PHONY : all re clean fclean
+# <-- Targets Declaration --> #
+.PHONY : all clean fclean re
