@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/11 15:09:53 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/11 16:39:19 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/16 20:07:05 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,3 +59,23 @@ char	*ft_itoa(int n)
 	}
 	return (str_num);
 }
+/* // For testing
+#include <stdio.h>
+
+int	main (void)
+{
+	//int number = -2147483648;
+	int number = 0;
+	char *str;
+
+	str = ft_itoa(number);
+	if (str != NULL)
+	{
+		printf("INT '%d' to string '%s'\n", number, str);
+		free(str);
+	}
+	else
+		printf("Error: INT '%d' to string.\n", number);
+	return (0);
+}
+*/

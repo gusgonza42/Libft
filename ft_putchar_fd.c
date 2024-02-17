@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 18:47:23 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/15 20:00:00 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/16 14:38:04 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-i/* //For test
+/* //For test
 int	main(void)
 {
 	int fd = 1;

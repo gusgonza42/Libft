@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 17:41:27 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/29 18:49:18 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/16 14:31:37 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,27 @@
 void	*ft_memset(void *dest, int c, size_t n)
 {
 	unsigned char	*str;
+	unsigned int	pos;
 
 	str = (unsigned char *) dest;
-	while (n--)
+	pos = 0;
+	while (pos < n)
 	{
-		*str++ = (unsigned char) c;
+		str[pos] = (unsigned char) c;
+		pos++;
 	}
 	return (dest);
 }
-/*#include <stdio.h>
+/* // For testing
+#include <stdio.h>
 #include <string.h>
 int main (void)
 {
-	char resultado[20];
-	char OriginalResultado[20];
+	char str1[] = "Hello world";
+	char str2[] = "Hello world";
 
-	printf("result: %s\n", ft_memset(resultado, 'a', 5));
-	printf("result: %s\n", memset(OriginalResultado, 'a', 5));
+	printf("Ft	 -> %s\n", ft_memset(str1, '*', 5));
+	printf("Original -> %s\n", memset(str2, '*', 5));
 	return (0);
-}*/
+}
+*/

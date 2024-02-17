@@ -6,9 +6,11 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 12:08:00 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/01/11 16:39:42 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/16 20:26:30 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -16,7 +18,7 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-/*
+/* //For testing
 #include <ctype.h>
 #include <stdio.h>
 int	main(void)
@@ -28,7 +30,6 @@ int	main(void)
 		printf("Si, return: %d\n", letter);
 	else
 		printf("No, return: %d\n", letter);
-	printf("Test usando Ctype.h\n");
 	if(isascii(letter))
 		printf("Si, return: %d\n", letter);
 	else

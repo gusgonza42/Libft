@@ -6,13 +6,13 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:38:36 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/15 20:32:42 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/16 14:37:25 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *str, int n)
+void	ft_bzero(void *str, size_t n)
 {
 	unsigned char	*ptr;
 	size_t			pos;
