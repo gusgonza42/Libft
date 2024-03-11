@@ -23,3 +23,8 @@ Ejemplo de compilación:
 
 ```bash
 gcc -Wall -Wextra -Werror -o my_program my_program.c libft.a
+```
+
+## Estado
+
+[![Build Status](https://img.shields.io/static/v1?label=Build%20Status&message=100%20success&color=success)](https://github.com/yowcloud/Libft)
