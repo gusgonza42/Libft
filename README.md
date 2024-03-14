@@ -5,7 +5,7 @@
 
 [![Build Status](https://img.shields.io/static/v1?label=Build%20Status&message=100%20success&color=success)](https://github.com/yowcloud/Libft)
 </div>
-
+- - -
 # Libft - Gustavo G. O.
 
 Bienvenido al proyecto "Libft" de la École 42 Barcelona. Este proyecto consiste en la creación de tu propia biblioteca estándar en C.
