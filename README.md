@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Libft</h1>
-    <img src="https://raw.githubusercontent.com/yowcloud/yowcloud-my-utils/main/badge_00_libft_500px.png" style="width: 150px; height: 150px;">
+    <img src="https://raw.githubusercontent.com/gusgonza42/my-utils-gusgonza/main/ft_badges_42/badge_00_libft_500px.png" style="width: 150px; height: 150px;">
 <div>Estado</div>
 
 [![Build Status](https://img.shields.io/static/v1?label=Build%20Status&message=100%20success&color=success)](https://github.com/yowcloud/Libft)
