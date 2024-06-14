@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
+/*   By: gusgonza <gusgonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 17:34:19 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/16 18:37:11 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/06/15 01:07:14 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	while (pos < n)
 	{
 		if (((unsigned char *)str)[pos] == (unsigned char)c)
-			return ((void *)&str[pos]);
+			return (&((unsigned char *)str)[pos]);
 		pos++;
 	}
 	return (NULL);
