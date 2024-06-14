@@ -9,11 +9,13 @@
 - - -
 
 
-Bienvenido al proyecto "Libft" de la École 42 Barcelona. Este proyecto consiste en la creación de tu propia biblioteca estándar en C.
+## 💡 Acerca del Proyecto
 
-## Descripción
+> _El proyecto Libft es la primera tarea de la piscina de 42. Su objetivo es recodificar varias funciones estándar de la biblioteca C, así como otras funciones útiles para su uso futuro en otros proyectos de 42._
 
-En este proyecto, he implementado diversas funciones estándar de la biblioteca C, así como algunas funciones adicionales útiles. La biblioteca Libft, puede ser utilizada como una biblioteca personalizada en futuros proyectos de la École 42.
+Este proyecto te permite familiarizarte con la implementación de funciones básicas en C, entender cómo funcionan las estructuras de datos y prácticas comunes, y mejorar tus habilidades de programación en general.
+
+Para obtener información detallada sobre los requisitos obligatorios del proyecto, consulta el [**Subject**](https://github.com/gusgonza42/Libft/blob/main/Libft_es_subject.pdf).
 
 ## Contenido
 
@@ -24,12 +26,48 @@ La biblioteca incluye implementaciones de funciones en las siguientes categoría
 - Funciones de manejo de listas (`ft_lstnew`, `ft_lstadd`, `ft_lstmap`, etc.).
 - Otras funciones útiles (`ft_putchar`, `ft_putstr`, `ft_putnbr`, etc.).
 
-## Uso
+## 🛠️ Uso
 
-Para utilizar esta biblioteca en tus proyectos, simplemente incluye el archivo `libft.h` en tus archivos fuente y compila junto con los archivos objeto de la biblioteca.
+### Requisitos
 
-Ejemplo de compilación:
+El proyecto está escrito en lenguaje C y requiere el compilador **gcc** y las **bibliotecas estándar de C** para funcionar correctamente.
 
-```bash
-gcc -Wall -Wextra -Werror -o my_program my_program.c libft.a
+### Instrucciones
+
+**1. Uso en tu código**
+
+Para utilizar `Libft` en tu código, incluye su encabezado en tus archivos de código fuente:
+
+```C
+#include "libft.h"
+```
+
+Asegúrate de que todos los archivos necesarios estén incluidos en tu compilación. No se requiere una bandera específica para este proyecto.
+
+## 📋 Ejemplos de Uso
+
+Puedes utilizar las funciones de `Libft` de manera similar a las funciones estándar de la biblioteca C:
+
+```C
+#include "libft.h"
+#include <stdio.h>
+
+int main() {
+    char *str = "Hello, world!";
+    int len = ft_strlen(str);
+    printf("Longitud de la cadena: %d\n", len);
+    return 0;
+}
+```
+
+Compila tu programa como lo harías normalmente con `gcc`:
+
+```shell
+gcc -Wall -Wextra -Werror tu_programa.c libft.a -o programa
+```
+
+Ejecuta tu programa compilado:
+
+```shell
+./programa
 ```
