@@ -28,6 +28,12 @@ SRC_FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
 			ft_putendl_fd.c ft_putnbr_fd.c ft_strtrim.c ft_split.c ft_itoa.c
 
+# <-- Bonus Objects --> #
+SRC_FILES_BONUS = ft_lstnew_bonus.c
+
+# <-- Bonus Objects --> #
+OBJS_BONUS = $(SRC_FILES_BONUS:.c=.o)
+
 # <-- Objects --> #
 OBJS = $(SRC_FILES:.c=.o)
 
@@ -48,7 +54,7 @@ $(NAME): $(OBJS)
 
 # <-- Objects Destruction --> #
 clean:
-	@$(RM) $(OBJS)
+	@$(RM) $(OBJS) $(OBJS_BONUS)
 	@echo "🗑️  🚀 Objects destroyed successfully!"
 
 # <-- Clean Execution + libft.a Destruction --> #
@@ -56,8 +62,13 @@ fclean: clean
 	@$(RM) $(NAME)
 	@echo "🗑️  🛰  $(NAME) destroyed successfully!"
 
+bonus: $(OBJS_BONUS)
+	@echo "✅ 🚀 0bjects Bonus created successfully!"
+	@$(AR) $(NAME) $(OBJS_BONUS)
+	@echo "✅ 🛰 $(NAME) <-- Bonus created successfully!"
+
 # <-- Fclean Execution -->
-re: fclean all
+re: fclean all bonus
 
 # <-- Targets Declaration --> #
-.PHONY : all clean fclean re
+.PHONY : all clean fclean bonus re

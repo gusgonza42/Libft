@@ -6,7 +6,7 @@
 /*   By: gusgonza <gusgonza@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 13:20:40 by gusgonza          #+#    #+#             */
-/*   Updated: 2024/02/12 15:44:01 by gusgonza         ###   ########.fr       */
+/*   Updated: 2024/02/17 15:04:44 by gusgonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	pos;
 	size_t	len;
 
-	pos = 0;
 	len = 0;
-	while (s[pos] != '\0')
+	while (s[len] != '\0')
 	{
 		len++;
-		pos++;
 	}
 	return (len);
 }
